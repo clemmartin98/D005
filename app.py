@@ -55,6 +55,7 @@ hide_github_icon = """
 }
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
+st.write('test')
 selected_week = st.sidebar.selectbox(
     "Sélectionnez la semaine que vous souhaitez analyser",
     options=dates,
