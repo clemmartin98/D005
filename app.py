@@ -7,7 +7,7 @@ from plotly.subplots import make_subplots
 
 # Page config
 st.set_page_config(layout="wide")
-st.title("D0005 - Tanguy de Mol - Destore Analysis Dashboard")
+st.title("D0005 - Destore Analysis Dashboard")
 
 # Load data
 @st.cache_data
@@ -51,7 +51,7 @@ st.markdown(
 )
 
 selected_week = st.sidebar.selectbox(
-    "Select Week",
+    "Sélectionnez la semaine que vous souhaitez analyser",
     options=dates,
     format_func=lambda x: f"Du {pd.to_datetime(x[0]).strftime('%d/%m/%Y')} au {pd.to_datetime(x[1]).strftime('%d/%m/%Y')}"
 )
@@ -79,7 +79,7 @@ def set_common_layout(fig, title, y_suffix=""):
             xaxis=dict(rangeslider=dict(visible=True))
         )
     return fig
-
+st.markdown("Ce Dashboard temporaire a pour but de visualiser les différentes données disponibles concernant votre installation.")
 # Create and display figures
 st.subheader("Bilan électrique")
 with st.expander("Show more"):
