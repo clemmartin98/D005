@@ -42,7 +42,6 @@ dates = [
 
 
 
-st.markdown(hide_github_icon, unsafe_allow_html=True)
 selected_week = st.sidebar.selectbox(
     "Sélectionnez la semaine que vous souhaitez analyser",
     options=dates,
