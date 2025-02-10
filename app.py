@@ -50,7 +50,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 hide_github_icon = """
-#GithubIcon {
+#MainMenu {
   visibility: hidden;
 }
 """
